@@ -56,7 +56,7 @@
               </div>
             </div>
             <form class='navbar-form navbar-right'>
-              <a class='btn btn-primary' href='/contact'>
+              <a class='btn btn-primary' href='<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>'>
                 Book a show
               </a>
             </form>

@@ -6,20 +6,15 @@ Template Name: Home
 
 
 <?php get_header(); ?>
-
-
-
-<section class='inverse-section hero-header-lg bg-cover' style='background-image:url(<?php bloginfo('template_url'); ?>/images/hero_home.png);'>
+<section class='inverse-section hero-header-lg bg-cover' style='background-image:url(<?php the_field('home_hero_background_image');?>);'>
   <div class='container'>
     <div class='row'>
       <div class='col-lg-12 text-center'>
         <h2 class='headline-accent headline-accent-lg no-pull'>
-          Robbie Pfunder
+          <?php the_field('home_hero_title');?>
         </h2>
         <h1>
-          Mountain Bike
-          <br>
-          Stunt Show
+          <?php the_field('home_hero_subtitle');?>
         </h1>
       </div>
     </div>
@@ -30,17 +25,17 @@ Template Name: Home
     <div class='row'>
       <div class='col-md-6 text-center margin-bottom'>
         <h2 class='headline-accent headline-accent-lg'>
-          Entertainment
+          <?php the_field('entertainment_title');?>
         </h2>
         <h2>
-          EXPERIENCE
+          <?php the_field('entertainment_subtitle');?>
         </h2>
       </div>
       <div class='col-sm-6'></div>
     </div>
     <div class='row entertainment-stack-top'>
       <div class='col-md-7'>
-        <div class='slider-entertainment' style='background-image:url(<?php bloginfo('template_url'); ?>/images/home_slider_bg.png);'></div>
+        <div class='slider-entertainment' style='background-image:url(<?php the_field('entertainment_panel_background_image');?>);'></div>
       </div>
       <div class='col-md-5'></div>
     </div>
@@ -49,16 +44,16 @@ Template Name: Home
       <div class='col-md-5'>
         <div class='div card-texture-dark-entertainment'>
           <h3>
-            PREMIER STUNT SHOWS
+            <?php the_field('entertainment_panel_title');?>
           </h3>
           <p class='margin-bottom'>
-            The journey to the backcountry does not follow a fixed path. Though there are many ways to get there, most backcountry skiers and snowboarders have a familiar origin story.
+          	<?php the_field('entertainment_panel_text');?>
           </p>
           <div class='btn-stack'>
-            <a class='btn btn-block btn-wire btn-lg half-margin-bottom' href='/contact'>
+            <a class='btn btn-block btn-wire btn-lg half-margin-bottom' href='<?php the_field('entertainment_book_now_link');?>'>
               BOOK NOW
             </a>
-            <a class='btn btn-block btn-wire btn-lg' href='/info'>
+            <a class='btn btn-block btn-wire btn-lg' href='<?php the_field('entertainment_learn_more_link');?>'>
               Learn more
             </a>
           </div>
@@ -68,36 +63,36 @@ Template Name: Home
     <div class='row hidden-xs'>
       <div class='col-md-1'></div>
       <div class='col-md-10'>
-        <img class='full-width' src='<?php bloginfo('template_url'); ?>/images/quite_ranked_rider.png'>
+        <img class='full-width' src='<?php the_field('entertainment_quote_image');?>'>
       </div>
       <div class='col-md-1'></div>
     </div>
   </div>
 </section>
-<section class='inverse-section section-rider bg-cover' style='background-image:url(<?php bloginfo('template_url'); ?>/images/section_bg_rider_home.png);'>
+<section class='inverse-section section-rider bg-cover' style='background-image:url(<?php the_field('rider_background_image');?>);'>
   <div class='container'>
     <div class='row'>
       <div class='col-md-3'></div>
       <div class='col-md-6 text-center'>
         <div class='rider-text'>
           <h2 class='headline-accent headline-accent-lg no-pull'>
-            The Rider
+            <?php the_field('rider_title');?>
           </h2>
           <h1>
-            ROBBIE
+            <?php the_field('rider_subtitle');?>
           </h1>
           <p class='double-margin-bottom'>
-            The journey to the backcountry does not follow a fixed path. Though there are many ways to get there, most backcountry skiers and snowboarders have a familiar origin story.
+            <?php the_field('rider_text');?>
           </p>
           <div class='btn-stack'>
             <div class='row'>
               <div class='col-sm-2'></div>
               <div class='col-sm-8'>
-                <a class='btn btn-block btn-wire btn-lg half-margin-bottom fb-video' href='https://vimeo.com/78700721'>
+                <a class='btn btn-block btn-wire btn-lg half-margin-bottom fb-video' href='<?php the_field('rider_video_link');?>'>
                   <i class='fa fa-play' style='margin-right:5px;'></i>
                   See robbie in action
                 </a>
-                <a class='btn btn-block btn-wire btn-lg' href='/about'>
+                <a class='btn btn-block btn-wire btn-lg' href='<?php the_field('more_about_robbie_page_link');?>'>
                   More about robbie
                 </a>
               </div>
@@ -127,86 +122,24 @@ Template Name: Home
         <div class='container'>
           <div class='grid'>
             <div class='grid-sizer'></div>
-            <div class='grid-item'>
-              <a class='fancybox' href='<?php bloginfo('template_url'); ?>/images/header_media.png'>
-                <img class='full-width' src='http://lorempixel.com/400/500/sports/'>
-                <div class='img-title'>
-                  <h2>
-                    IMAGE TITLE
-                  </h2>
-                </div>
-              </a>
-            </div>
-            <div class='grid-item'>
-              <a class='fancybox' href='<?php bloginfo('template_url'); ?>/images/header_media.png'>
-                <img class='full-width' src='http://lorempixel.com/400/600/sports/'>
-                <div class='img-title'>
-                  <h2>
-                    IMAGE TITLE
-                  </h2>
-                </div>
-              </a>
-            </div>
-            <div class='grid-item'>
-              <a class='fancybox' href='<?php bloginfo('template_url'); ?>/images/header_media.png'>
-                <img class='full-width' src='http://lorempixel.com/400/500/sports/'>
-                <div class='img-title'>
-                  <h2>
-                    IMAGE TITLE
-                  </h2>
-                </div>
-              </a>
-            </div>
-            <div class='grid-item'>
-              <a class='fancybox' href='<?php bloginfo('template_url'); ?>/images/header_media.png'>
-                <img class='full-width' src='http://lorempixel.com/400/600/sports/'>
-                <div class='img-title'>
-                  <h2>
-                    IMAGE TITLE
-                  </h2>
-                </div>
-              </a>
-            </div>
-            <div class='grid-item'>
-              <a class='fancybox' href='<?php bloginfo('template_url'); ?>/images/header_media.png'>
-                <img class='full-width' src='http://lorempixel.com/400/500/sports/'>
-                <div class='img-title'>
-                  <h2>
-                    IMAGE TITLE
-                  </h2>
-                </div>
-              </a>
-            </div>
-            <div class='grid-item'>
-              <a class='fancybox' href='<?php bloginfo('template_url'); ?>/images/header_media.png'>
-                <img class='full-width' src='http://lorempixel.com/400/600/sports/'>
-                <div class='img-title'>
-                  <h2>
-                    IMAGE TITLE
-                  </h2>
-                </div>
-              </a>
-            </div>
-            <div class='grid-item'>
-              <a class='fancybox' href='<?php bloginfo('template_url'); ?>/images/header_media.png'>
-                <img class='full-width' src='http://lorempixel.com/400/500/sports/'>
-                <div class='img-title'>
-                  <h2>
-                    IMAGE TITLE
-                  </h2>
-                </div>
-              </a>
-            </div>
-            <div class='grid-item'>
-              <a class='fancybox' href='<?php bloginfo('template_url'); ?>/images/header_media.png'>
-                <img class='full-width' src='http://lorempixel.com/400/600/sports/'>
-                <div class='img-title'>
-                  <h2>
-                    IMAGE TITLE
-                  </h2>
-                </div>
-              </a>
-            </div>
+
+            <?php $medialoop = new WP_Query( array('post_type' => 'media', 'posts_per_page' => 9) ); ?>
+            <?php while ( $medialoop->have_posts() ) : $medialoop->the_post(); ?>
+
+              <div class='grid-item'>
+                <a class='fancybox' href='<?php the_field('media_image');?>'>
+                  <img class='full-width' src='<?php the_field('media_image');?>'>
+                  <div class='img-title'>
+                    <h2>
+                      <?php the_title();?>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+
+            <?php wp_reset_postdata(); ?>
+            <?php endwhile; // end of the loop. ?>
+
           </div>
         </div>
       </section>
@@ -218,8 +151,9 @@ Template Name: Home
 <?php while ( have_posts() ) : the_post(); ?>
 <?php endwhile; // end of the loop. ?>
 
-
-<?php get_template_part( 'content', 'teaser' ); ?>
+<div style='margin-top:-60px;'>
+  <?php get_template_part( 'content', 'teaser' ); ?>
+</div>
 
 
 <?php get_footer(); ?>
