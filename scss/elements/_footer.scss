@@ -63,6 +63,7 @@ footer{
 			float:left;
 			font-size: 4em;
 			line-height: 1em;
+			font-family: $social-font-name;
 			a{
 				@include transition-duration(.1s);
 				color:rgba(255,255,255,.8);

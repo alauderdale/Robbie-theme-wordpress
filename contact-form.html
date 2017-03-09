@@ -1,0 +1,47 @@
+<form>
+  <div class='row'>
+    <div class='col-md-12'>
+      <div class='form-group'>
+        <label>
+          My name is
+        </label>
+        [text* your-name class:form-control class:input-lg placeholder "John doe"]
+      </div>
+    </div>
+    <div class='col-md-6'>
+      <div class='form-group'>
+        <label>
+          Email
+        </label>
+        [email* your-email class:form-control class:input-lg placeholder "john@doe.com"]
+      </div>
+    </div>
+    <div class='col-md-6'>
+      <div class='form-group'>
+        <label>
+          Phone
+        </label>
+        [text* your-phone class:form-control class:input-lg placeholder "555-555-5555"]
+      </div>
+    </div>
+    <div class='col-md-12'>
+      <div class='form-group'>
+        <label>
+          I want to...
+        </label>
+        [select* contact-reason class:form-control class:input-lg "Book a show" "General inquiry" "Other"]
+      </div>
+    </div>
+    <div class='col-md-12'>
+      <div class='form-group'>
+        <label>
+          Anything else?
+        </label>
+        [textarea your-message rows:5 class:form-control class:input-lg]
+      </div>
+    </div>
+    <div class='col-md-12 margin-top'>
+      [submit class:btn-primary class:btn class:btn-block class:btn-lg "Send"]
+    </div>
+  </div>
+</form>

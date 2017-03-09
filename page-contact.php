@@ -25,62 +25,9 @@ Template Name: Contact
             <p class='text-center margin-bottom'>
               <?php the_field('contact_hello_text');?>
             </p>
-            <form>
-              <div class='row'>
-                <div class='col-md-12'>
-                  <div class='form-group'>
-                    <label>
-                      My name is
-                    </label>
-                    <input class='form-control input-lg' type='text'>
-                  </div>
-                </div>
-                <div class='col-md-6'>
-                  <div class='form-group'>
-                    <label>
-                      Email
-                    </label>
-                    <input class='form-control input-lg' type='text'>
-                  </div>
-                </div>
-                <div class='col-md-6'>
-                  <div class='form-group'>
-                    <label>
-                      Phone
-                    </label>
-                    <input class='form-control input-lg' type='text'>
-                  </div>
-                </div>
-                <div class='col-md-12'>
-                  <div class='form-group'>
-                    <label>
-                      I want to...
-                    </label>
-                    <select class='form-control input-lg' rows='5'>
-                      <option>
-                        Book a show
-                      </option>
-                      <option>
-                        Buy Robbie a beer
-                      </option>
-                    </select>
-                  </div>
-                </div>
-                <div class='col-md-12'>
-                  <div class='form-group'>
-                    <label>
-                      Anything else?
-                    </label>
-                    <textarea class='form-control input-lg' rows='5'></textarea>
-                  </div>
-                </div>
-                <div class='col-md-12 margin-top'>
-                  <button class='btn-primary btn btn-block btn-lg' type='submit'>
-                    Send
-                  </button>
-                </div>
-              </div>
-            </form>
+            <?php while ( have_posts() ) : the_post(); ?>
+              <?php the_content();?>
+            <?php endwhile; // end of the loop. ?>
           </div>
         </div>
       </div>

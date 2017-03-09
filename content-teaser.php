@@ -19,7 +19,7 @@
           <p class='margin-bottom'>
             Or just say hello
           </p>
-          <a class='btn btn-wire btn-lg double-padding-left double-padding-right' href='/contact'>
+          <a class='btn btn-wire btn-lg double-padding-left double-padding-right' href='<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>'>
             Get in Touch
           </a>
         </div>

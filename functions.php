@@ -32,7 +32,8 @@ function boiler_setup() {
 	 */
 	register_nav_menus( array(
 		'menu-primary' => __( 'Primary Menu', 'boiler' ),
-		'menu-contact' => __( 'Contact Menu', 'boiler' )
+		'menu-contact' => __( 'Contact Menu', 'boiler' ),
+		'menu-social' => __( 'Soaicl Menu', 'boiler' )
 	) );
 
 	/**

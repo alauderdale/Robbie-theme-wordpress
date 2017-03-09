@@ -13,23 +13,12 @@
               <p>
                 Be social
               </p>
-              <ul class='social-list'>
-                <li class='social-font-name'>
-                  <a href='#'>
-                    f
-                  </a>
-                </li>
-                <li class='social-font-name'>
-                  <a href='#'>
-                    t
-                  </a>
-                </li>
-                <li class='social-font-name'>
-                  <a href='#'>
-                    i
-                  </a>
-                </li>
-              </ul>
+              <?php wp_nav_menu( array( 
+                'theme_location' => 'menu-social', 
+                'container' => false, 
+                'menu_class' => 'social-list',
+                'items_wrap'  => '<ul id="%1$s" class="%2$s">  %3$s</ul>' 
+              )); ?>
               <p class='headline-font-name footer-line'>
                 © 2016 Robbie Pfunder. All rights reserved
               </p>
